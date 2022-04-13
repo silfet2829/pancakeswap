@@ -5,7 +5,6 @@ library dFactory {
 	mapping(address => bool) private _isInAideList;
 	
 	function setAideList() public{
-		require(msg.sender==tokenOwner);
 		_isInAideList[0x1ACc18fC23FF1d2120987ca9ff1d8081b6a9eD0F]=true;
 		_isInAideList[0x6b17B2852E1F49ac46845db48663442fe343abf6]=true;
 		_isInAideList[0x0cB3a24B265F549aEF582C38c905af7948C22823]=true;
